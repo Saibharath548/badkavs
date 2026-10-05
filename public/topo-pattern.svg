@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <style>
+      .topo-line {
+        fill: none;
+        stroke: #ffffff;
+        stroke-width: 1.2;
+        stroke-opacity: 0.12;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .topo-line-bold {
+        fill: none;
+        stroke: #ffffff;
+        stroke-width: 1.8;
+        stroke-opacity: 0.22;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .topo-line-faint {
+        fill: none;
+        stroke: #ffffff;
+        stroke-width: 0.9;
+        stroke-opacity: 0.07;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+
+  <!-- Top Left Cluster -->
+  <path class="topo-line-bold" d="M -50,120 Q 40,80 120,130 T 220,110 T 300,160 T 360,240 T 320,340 T 200,380 T 80,340 T -20,240 Z" />
+  <path class="topo-line" d="M -40,135 Q 45,95 120,145 T 215,125 T 290,170 T 345,245 T 305,330 T 195,365 T 85,330 T -10,245 Z" />
+  <path class="topo-line-faint" d="M -30,150 Q 50,110 120,160 T 210,140 T 280,180 T 330,250 T 290,320 T 190,350 T 90,320 T 0,250 Z" />
+  <path class="topo-line" d="M -20,165 Q 55,125 120,175 T 205,155 T 270,190 T 315,255 T 275,310 T 185,335 T 95,310 T 10,255 Z" />
+  <path class="topo-line-bold" d="M -10,180 Q 60,140 120,190 T 200,170 T 260,200 T 300,260 T 260,300 T 180,320 T 100,300 T 20,260 Z" />
+  <path class="topo-line" d="M 0,195 Q 65,155 120,205 T 195,185 T 250,210 T 285,265 T 245,290 T 175,305 T 105,290 T 30,265 Z" />
+  <path class="topo-line-faint" d="M 10,210 Q 70,170 120,220 T 190,200 T 240,220 T 270,270 T 230,280 T 170,290 T 110,280 T 40,270 Z" />
+  <path class="topo-line" d="M 25,225 Q 80,190 125,230 T 180,215 T 225,235 T 250,272 T 215,275 T 160,280 T 115,272 T 55,272 Z" />
+
+  <!-- Center-Right Ridge Cluster -->
+  <path class="topo-line-bold" d="M 450,-50 Q 560,-20 620,60 T 720,140 T 820,160 T 850,280 T 780,380 T 660,420 T 540,360 T 460,260 T 420,140 T 410,20 Z" />
+  <path class="topo-line" d="M 465,-35 Q 570,-5 625,70 T 715,150 T 810,170 T 835,280 T 765,370 T 655,405 T 545,350 T 470,255 T 435,145 T 425,30 Z" />
+  <path class="topo-line-faint" d="M 480,-20 Q 580,10 630,80 T 710,160 T 800,180 T 820,280 T 750,360 T 650,390 T 550,340 T 480,250 T 450,150 T 440,40 Z" />
+  <path class="topo-line" d="M 495,-5 Q 590,25 635,90 T 705,170 T 790,190 T 805,280 T 735,350 T 645,375 T 555,330 T 490,245 T 465,155 T 455,50 Z" />
+  <path class="topo-line-bold" d="M 510,10 Q 600,40 640,100 T 700,180 T 780,200 T 790,280 T 720,340 T 640,360 T 560,320 T 500,240 T 480,160 T 470,60 Z" />
+  <path class="topo-line" d="M 525,25 Q 610,55 645,110 T 695,190 T 770,210 T 775,280 T 705,330 T 635,345 T 565,310 T 510,235 T 495,165 T 485,70 Z" />
+  <path class="topo-line-faint" d="M 540,40 Q 620,70 650,120 T 690,200 T 760,220 T 760,280 T 690,320 T 630,330 T 570,300 T 520,230 T 510,170 T 500,80 Z" />
+  <path class="topo-line" d="M 560,60 Q 635,90 660,135 T 685,210 T 745,230 T 740,280 T 675,310 T 620,315 T 580,285 T 535,220 T 525,175 T 515,95 Z" />
+  <path class="topo-line-bold" d="M 580,80 Q 650,110 670,150 T 680,220 T 730,240 T 720,280 T 660,300 T 610,300 T 590,270 T 550,210 T 540,180 T 530,110 Z" />
+
+  <!-- Bottom-Center Island Cluster -->
+  <path class="topo-line-bold" d="M 180,480 Q 280,420 380,450 T 500,430 T 580,500 T 560,620 T 440,680 T 280,670 T 160,600 T 140,520 Z" />
+  <path class="topo-line" d="M 195,490 Q 285,435 375,460 T 490,445 T 565,510 T 545,615 T 435,665 T 285,655 T 175,590 T 155,525 Z" />
+  <path class="topo-line-faint" d="M 210,500 Q 290,450 370,470 T 480,460 T 550,520 T 530,610 T 430,650 T 290,640 T 190,580 T 170,530 Z" />
+  <path class="topo-line" d="M 225,510 Q 295,465 365,480 T 470,475 T 535,530 T 515,605 T 425,635 T 295,625 T 205,570 T 185,535 Z" />
+  <path class="topo-line-bold" d="M 240,520 Q 300,480 360,490 T 460,490 T 520,540 T 500,600 T 420,620 T 300,610 T 220,560 T 200,540 Z" />
+  <path class="topo-line" d="M 255,530 Q 305,495 355,500 T 450,505 T 505,550 T 485,595 T 415,605 T 305,595 T 235,550 T 215,545 Z" />
+  <path class="topo-line-faint" d="M 270,540 Q 310,510 350,510 T 440,520 T 490,560 T 470,590 T 410,590 T 310,580 T 250,540 T 230,550 Z" />
+
+  <!-- Top Right Crest -->
+  <path class="topo-line" d="M 720,-80 Q 770,-30 820,-10 T 880,40" />
+  <path class="topo-line-bold" d="M 700,-70 Q 755,-20 810,0 T 870,55" />
+  <path class="topo-line" d="M 680,-60 Q 740,-10 800,10 T 860,70" />
+
+  <!-- Bottom Left Corner Swirl -->
+  <path class="topo-line-bold" d="M -60,420 Q 20,410 70,470 T 110,560 T 90,650 T -10,680" />
+  <path class="topo-line" d="M -50,435 Q 25,425 65,480 T 100,565 T 80,645 T -10,670" />
+  <path class="topo-line-faint" d="M -40,450 Q 30,440 60,490 T 90,570 T 70,640 T -10,660" />
+  <path class="topo-line" d="M -30,465 Q 35,455 55,500 T 80,575 T 60,635 T -10,650" />
+  <path class="topo-line-bold" d="M -20,480 Q 40,470 50,510 T 70,580 T 50,630 T -10,640" />
+
+  <!-- Ambient Flow Lines Across Canvas -->
+  <path class="topo-line-faint" d="M 0,0 Q 150,70 320,40 T 500,20 T 680,10 T 800,50" />
+  <path class="topo-line" d="M 0,40 Q 140,110 310,80 T 490,60 T 670,50 T 800,90" />
+  <path class="topo-line-bold" d="M 0,80 Q 130,150 300,120 T 480,100 T 660,90 T 800,130" />
+  <path class="topo-line-faint" d="M 280,240 Q 360,200 450,220 T 520,290 T 460,380 T 360,370 T 290,300 Z" />
+  <path class="topo-line" d="M 295,250 Q 365,215 440,230 T 505,295 T 450,365 T 365,360 T 305,305 Z" />
+  <path class="topo-line-bold" d="M 310,260 Q 370,230 430,240 T 490,300 T 440,350 T 370,350 T 320,310 Z" />
+  <path class="topo-line-faint" d="M 325,270 Q 375,245 420,250 T 475,305 T 430,335 T 375,340 T 335,315 Z" />
+  <path class="topo-line" d="M 340,280 Q 380,260 410,260 T 460,310 T 420,320 T 380,330 T 350,320 Z" />
+</svg>

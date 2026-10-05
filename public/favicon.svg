@@ -1,11 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <rect width="64" height="64" rx="12" fill="#0a0a0f"/>
-  <rect x="1" y="1" width="62" height="62" rx="11" stroke="url(#g)" stroke-width="1.5"/>
-  <text x="32" y="42" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="22" fill="url(#g)">BK</text>
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="64" y2="64">
-      <stop offset="0%" stop-color="#a78bfa"/>
-      <stop offset="100%" stop-color="#6d28d9"/>
-    </linearGradient>
-  </defs>
+  <rect width="64" height="64" rx="14" fill="#141418"/>
+  <rect x="1" y="1" width="62" height="62" rx="13" stroke="#ffffff" stroke-opacity="0.15" stroke-width="1.5"/>
+  
+  <!-- Subtle Topo line in favicon -->
+  <path d="M 6,24 Q 20,14 36,20 T 58,16" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1" fill="none"/>
+  <path d="M 6,48 Q 28,38 44,46 T 58,40" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" fill="none"/>
+
+  <!-- BK monogram -->
+  <text x="32" y="37" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="900" font-size="20" fill="#f5f5f7" letter-spacing="1">BK</text>
+  
+  <!-- Mini gaming glyphs: ✕ ○ △ □ -->
+  <g transform="translate(18, 44)" stroke="#8e8e99" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ✕ Cross -->
+    <path d="M 0,2 L 4,6 M 4,2 L 0,6" />
+    <!-- ○ Circle -->
+    <circle cx="10" cy="4" r="2.2" />
+    <!-- △ Triangle -->
+    <polygon points="18,1.8 15.8,6 20.2,6" />
+    <!-- □ Square -->
+    <rect x="24" y="2" width="4" height="4" rx="0.5" />
+  </g>
 </svg>

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { siteConfig } from '@/config/site';
+import ControllerGlyphs from './ControllerGlyphs';
 
 export default function Hero() {
   return (
@@ -11,9 +12,15 @@ export default function Hero() {
       </div>
 
       <div className="hero__content">
-        <div className="hero__badge">
-          <span className="hero__badge-dot" aria-hidden="true" />
-          Game Development &amp; Creative Services
+        {/* Topographic Gaming Motif Banner (Inspired by reference) */}
+        <div className="hero__gaming-banner" aria-label="BADKAVS gaming studio">
+          <div className="hero__gaming-banner-glyphs">
+            <ControllerGlyphs size={20} layout="grid" />
+          </div>
+          <div className="hero__gaming-banner-text">
+            <span className="hero__gaming-banner-heading">GAMING FOR FUN.</span>
+            <span className="hero__gaming-banner-sub">GAME DEV &amp; CREATIVE SERVICES</span>
+          </div>
         </div>
 
         <h1 className="hero__title">

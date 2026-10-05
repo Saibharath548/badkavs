@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Mail, Instagram, Linkedin } from 'lucide-react';
 import { siteConfig } from '@/config/site';
+import ControllerGlyphs from './ControllerGlyphs';
 
 export default function Footer() {
   return (
@@ -9,7 +10,10 @@ export default function Footer() {
         <div className="footer__inner">
           {/* Brand */}
           <div>
-            <div className="footer__brand-name">{siteConfig.name}</div>
+            <div className="footer__brand-name">
+              <ControllerGlyphs size={11} layout="grid" />
+              <span>{siteConfig.name}</span>
+            </div>
             <p className="footer__brand-tagline">
               Game Development &amp; Creative Services
             </p>
@@ -63,7 +67,8 @@ export default function Footer() {
         </div>
 
         <div className="footer__bottom">
-          &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+          <span>&copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</span>
+          <ControllerGlyphs size={12} layout="inline" />
         </div>
       </div>
     </footer>
