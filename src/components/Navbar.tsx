@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { siteConfig } from '@/config/site';
-import ControllerGlyphs from './ControllerGlyphs';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,8 +16,8 @@ export default function Navbar() {
     <nav className="navbar" role="navigation" aria-label="Main navigation">
       <div className="navbar__inner">
         <Link to="/" className="navbar__logo" aria-label={`${siteConfig.name} — Home`}>
-          <ControllerGlyphs size={10} layout="grid" />
-          <span>{siteConfig.name}</span>
+          <span className="navbar__logo-badge">BK</span>
+          <span className="navbar__logo-text">{siteConfig.name}</span>
         </Link>
 
         {/* Desktop navigation */}
