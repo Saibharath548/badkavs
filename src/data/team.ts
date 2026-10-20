@@ -46,6 +46,7 @@ export const team: TeamMember[] = [
     name: 'Harsha',
     role: 'Team Member',
     bio: '',
+    linkedin: 'https://www.linkedin.com/in/harsha-vardhan-dvs-038a6a395/',
   },
   {
     id: 'kiran',
@@ -67,6 +68,13 @@ export const team: TeamMember[] = [
     role: 'Team Member',
     bio: '',
     linkedin: 'https://www.linkedin.com/in/ranjith-mohan-1ba52b329/',
+  },
+  {
+    id: 'sahithi',
+    name: 'Sahithi',
+    role: 'Team Member',
+    bio: '',
+    linkedin: 'https://www.linkedin.com/in/sahithi-varma-rudraraju-b6098b3a7/',
   },
   {
     id: 'santosh',
