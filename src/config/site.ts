@@ -15,6 +15,7 @@ export const siteConfig = {
   navigation: [
     { name: 'Home', path: '/' },
     { name: 'Services', path: '/services' },
+    { name: 'Our Works', path: '/works' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ],
