@@ -5,12 +5,10 @@ import {
   Wrench,
   Layers,
   Target,
-  Linkedin,
 } from 'lucide-react';
 import SectionHeading from '@/components/SectionHeading';
 import CTASection from '@/components/CTASection';
 import { siteConfig } from '@/config/site';
-import { team } from '@/data/team';
 
 export default function About() {
   return (
@@ -80,62 +78,6 @@ export default function About() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section
-        className="section"
-        style={{ background: 'var(--color-bg-secondary)' }}
-        aria-label="Our team"
-      >
-        <div className="container">
-          <SectionHeading
-            label="Team"
-            title="Our Team"
-            description="The people behind BADKAVS."
-          />
-          {team.length > 0 ? (
-            <div className="about-values">
-              {team.map((member) => (
-                <div key={member.id} className="about-value-card">
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.5rem', marginBottom: '0.25rem' }}>
-                    <h3 className="about-value-card__title" style={{ marginBottom: 0 }}>{member.name}</h3>
-                    {member.linkedin && (
-                      <a
-                        href={member.linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`${member.name} on LinkedIn`}
-                        style={{
-                          color: 'var(--color-accent)',
-                          display: 'flex',
-                          alignItems: 'center',
-                          flexShrink: 0,
-                          transition: 'opacity 0.2s',
-                        }}
-                        onMouseEnter={e => (e.currentTarget.style.opacity = '0.7')}
-                        onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
-                      >
-                        <Linkedin size={18} />
-                      </a>
-                    )}
-                  </div>
-                  <p
-                    className="about-value-card__text"
-                    style={{ marginBottom: '0.5rem', color: 'var(--color-accent)' }}
-                  >
-                    {member.role}
-                  </p>
-                  <p className="about-value-card__text">{member.bio}</p>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="team-placeholder">
-              <p>Team information coming soon.</p>
-            </div>
-          )}
         </div>
       </section>
 
