@@ -14,6 +14,13 @@ export interface TeamMember {
  */
 export const team: TeamMember[] = [
   {
+    id: 'bhanu',
+    name: 'Bhanu',
+    role: 'Team Member',
+    bio: '',
+    linkedin: 'https://www.linkedin.com/in/ranam-bhanu-uday-3a40b63a8/',
+  },
+  {
     id: 'bharath',
     name: 'Bharath',
     role: 'Team Member',
