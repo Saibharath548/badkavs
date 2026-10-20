@@ -5,6 +5,7 @@ import {
   Wrench,
   Layers,
   Target,
+  Linkedin,
 } from 'lucide-react';
 import SectionHeading from '@/components/SectionHeading';
 import CTASection from '@/components/CTASection';
@@ -98,7 +99,28 @@ export default function About() {
             <div className="about-values">
               {team.map((member) => (
                 <div key={member.id} className="about-value-card">
-                  <h3 className="about-value-card__title">{member.name}</h3>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.5rem', marginBottom: '0.25rem' }}>
+                    <h3 className="about-value-card__title" style={{ marginBottom: 0 }}>{member.name}</h3>
+                    {member.linkedin && (
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${member.name} on LinkedIn`}
+                        style={{
+                          color: 'var(--color-accent)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          flexShrink: 0,
+                          transition: 'opacity 0.2s',
+                        }}
+                        onMouseEnter={e => (e.currentTarget.style.opacity = '0.7')}
+                        onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
+                      >
+                        <Linkedin size={18} />
+                      </a>
+                    )}
+                  </div>
                   <p
                     className="about-value-card__text"
                     style={{ marginBottom: '0.5rem', color: 'var(--color-accent)' }}
