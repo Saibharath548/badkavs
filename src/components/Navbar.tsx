@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { siteConfig } from '@/config/site';
+import logoImg from '@/assets/logo.png';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ export default function Navbar() {
     <nav className="navbar" role="navigation" aria-label="Main navigation">
       <div className="navbar__inner">
         <Link to="/" className="navbar__logo" aria-label={`${siteConfig.name} — Home`}>
-          <img src="/logo.png" alt="BadCaws logo" className="navbar__logo-img" />
+          <img src={logoImg} alt={`${siteConfig.name} logo`} className="navbar__logo-img" />
           <span className="navbar__logo-text">{siteConfig.name}</span>
         </Link>
 

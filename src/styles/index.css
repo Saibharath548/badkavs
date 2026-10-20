@@ -871,14 +871,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ── Contact Cards ────────────────────────────────────────────── */
 .contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1.75rem;
-  max-width: 960px;
+  max-width: 520px;
   margin: 0 auto;
 }
 
 .contact-card {
+  width: 100%;
+  max-width: 480px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1604,6 +1607,90 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 600px) {
   .works-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ── Footer ──────────────────────────────────────────────────────── */
+.footer {
+  border-top: 1px solid var(--color-border);
+  background: var(--color-bg-secondary);
+  padding: 4.5rem 0 2.5rem;
+  margin-top: 5rem;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+.footer__brand-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.footer__brand-tagline {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  max-width: 320px;
+  line-height: 1.6;
+}
+
+.footer__heading {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+}
+
+.footer__link {
+  display: block;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.footer__link:hover {
+  color: #ffffff;
+  transform: translateX(2px);
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-tertiary);
+  font-size: 0.85rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer__tag {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--color-text-tertiary);
+}
+
+@media (max-width: 768px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 

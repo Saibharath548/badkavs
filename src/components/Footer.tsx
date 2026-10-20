@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Mail, Instagram, Linkedin } from 'lucide-react';
 import { siteConfig } from '@/config/site';
+import logoImg from '@/assets/logo.png';
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="footer__brand-name">
-              <img src="/logo.png" alt={`${siteConfig.name} logo`} className="navbar__logo-img" />
+              <img src={logoImg} alt={`${siteConfig.name} logo`} className="navbar__logo-img" />
               <span>{siteConfig.name}</span>
             </div>
             <p className="footer__brand-tagline">
