@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: 'BadCaws',
+  name: 'BADCAWS',
 
   tagline: 'Building Games. Creating Worlds.',
 

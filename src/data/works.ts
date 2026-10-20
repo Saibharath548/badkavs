@@ -7,6 +7,7 @@ export interface Work {
   category: WorkCategory;
   tags?: string[];
   image?: string;
+  video?: string;
   /** Link to itch.io, ArtStation, YouTube, Unity Asset Store, etc. */
   link?: string;
   linkLabel?: string;
@@ -91,6 +92,7 @@ export const works: Work[] = [
       'A fast-paced 2D platformer where players parkour through vibrant handcrafted levels, collecting fruits for points and picking up power-ups to enhance agility and overcome challenging obstacles.',
     category: 'games',
     tags: ['2D Platformer', 'Pixel Art', 'Parkour', 'Fast-Paced'],
+    video: '/images/pixel-adventure.webm',
     link: 'https://t0cks1ck.itch.io/pixel-platformer',
     linkLabel: 'Play on itch.io',
   },
@@ -103,28 +105,19 @@ export const works: Work[] = [
       'A fully modular 3D building pack designed for game-ready usage. Optimized for rapid environment creation and flexible assembly, allowing creators to produce diverse architectural structures and layouts efficiently.',
     category: 'art',
     tags: ['3D Environment', 'Modular Assets', 'Blender', 'Game Ready', 'Props'],
-    image: 'https://img.itch.zone/aW1nLzIzMTU0NzE0LnBuZw==/original/esJWsU.png',
+    image: '/images/modular-building-kit.png',
     link: 'https://itiskiruhere.itch.io/modular-building-kit',
     linkLabel: 'View on itch.io',
   },
   {
-    id: 'unity-asset-store-publisher',
-    title: 'Unity Asset Store — 3D Asset Collection',
+    id: 'unity-advance-outline-shader',
+    title: 'Advance Outline Shader (Unity)',
     description:
-      'Official publisher profile on the Unity Asset Store featuring production-ready 3D models from stylized to realistic — including character art, environmental props, and PBR textures optimized for real-time engines and VFX.',
+      'High-performance custom outline shader developed for Unity. Features clean silhouette extraction, adjustable line thickness, customizable colors, and depth/normal edge detection engineered for stylized visuals and VFX.',
     category: 'art',
-    tags: ['Unity Asset Store', '3D Models', 'PBR Textures', 'Environment Art', 'Game Ready'],
+    tags: ['Unity Asset Store', 'Custom Shader', 'HLSL', 'Outline VFX', 'Game Ready'],
+    image: '/images/advance-outline-shader.png',
     link: 'https://assetstore.unity.com/publishers/105358',
     linkLabel: 'View on Unity Asset Store',
-  },
-
-  // ── Other ──────────────────────────────────────────────────────────
-  {
-    id: 'game-trailers-media',
-    title: 'Game Reveal Trailers & Cinematics',
-    description:
-      'High-impact game trailers, gameplay sizzle reels, and promotional video content edited with custom sound design, motion graphics, color grading, and dynamic pacing.',
-    category: 'other',
-    tags: ['Video Production', 'Trailers', 'Motion Graphics', 'Sound Design'],
   },
 ];

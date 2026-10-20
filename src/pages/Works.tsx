@@ -26,6 +26,20 @@ const CATEGORY_LABEL: Record<WorkCategory, string> = {
 function WorkThumbnail({ work }: { work: Work }) {
   const [imgFailed, setImgFailed] = useState(false);
 
+  if (work.video) {
+    return (
+      <video
+        src={work.video}
+        className="work-card__img"
+        autoPlay
+        loop
+        muted
+        playsInline
+        poster={work.image}
+      />
+    );
+  }
+
   if (work.image && !imgFailed) {
     return (
       <img
