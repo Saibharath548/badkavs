@@ -1,4 +1,4 @@
-export type WorkCategory = 'games' | '3d-art' | '2d-art' | 'other';
+export type WorkCategory = 'games' | 'art' | 'other';
 
 export interface Work {
   id: string;
@@ -19,44 +19,32 @@ export interface Work {
  */
 export const works: Work[] = [
   // ── Games ──────────────────────────────────────────────────────────
-  // {
-  //   id: 'game-1',
-  //   title: 'Project Alpha',
-  //   description: 'A fast-paced 3D action platformer built in Unreal Engine 5.',
-  //   category: 'games',
-  //   tags: ['Unreal Engine 5', 'C++', 'Multiplayer'],
-  //   link: 'https://badkavs.itch.io/project-alpha',
-  //   linkLabel: 'Play on itch.io',
-  // },
+  {
+    id: 'game-example',
+    title: 'Project Alpha',
+    description:
+      'A fast-paced 3D action platformer built in Unreal Engine 5. Features custom movement mechanics, AI enemies, and a hand-crafted level designed for speedrunning.',
+    category: 'games',
+    tags: ['Unreal Engine 5', 'C++', 'Blueprints', 'Single Player'],
+  },
 
-  // ── 3D Art ─────────────────────────────────────────────────────────
-  // {
-  //   id: '3d-1',
-  //   title: 'Sci-Fi Corridor',
-  //   description: 'A modular sci-fi environment built in Blender, textured in Substance Painter.',
-  //   category: '3d-art',
-  //   tags: ['Blender', 'Substance Painter', 'Environment'],
-  //   link: 'https://www.artstation.com/artwork/...',
-  //   linkLabel: 'View on ArtStation',
-  // },
-
-  // ── 2D Art ─────────────────────────────────────────────────────────
-  // {
-  //   id: '2d-1',
-  //   title: 'Character Concept Sheet',
-  //   description: 'Full turn-around concept art for the protagonist of Project Alpha.',
-  //   category: '2d-art',
-  //   tags: ['Concept Art', 'Photoshop', 'Character Design'],
-  // },
+  // ── Art (3D / 2D) ────────────────────────────────────────────────
+  {
+    id: 'art-example',
+    title: 'Sci-Fi Environment Concept',
+    description:
+      'A modular sci-fi corridor environment built in Blender and textured in Substance Painter. Designed for use in real-time game engines with optimised LODs.',
+    category: 'art',
+    tags: ['Blender', 'Substance Painter', '3D Art', 'Environment'],
+  },
 
   // ── Other ──────────────────────────────────────────────────────────
-  // {
-  //   id: 'other-1',
-  //   title: 'Game Trailer — Project Alpha',
-  //   description: 'Official reveal trailer edited in DaVinci Resolve.',
-  //   category: 'other',
-  //   tags: ['Video Editing', 'DaVinci Resolve'],
-  //   link: 'https://youtu.be/...',
-  //   linkLabel: 'Watch on YouTube',
-  // },
+  {
+    id: 'other-example',
+    title: 'Game Reveal Trailer',
+    description:
+      'Official reveal trailer for Project Alpha — edited in DaVinci Resolve with custom sound design, motion graphics, and colour grading.',
+    category: 'other',
+    tags: ['Video Editing', 'DaVinci Resolve', 'Motion Graphics'],
+  },
 ];

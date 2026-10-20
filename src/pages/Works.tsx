@@ -1,16 +1,27 @@
 import { useState, useMemo } from 'react';
-import { Gamepad2, Box, Palette, Layers, ExternalLink } from 'lucide-react';
+import { Gamepad2, Palette, Layers, ExternalLink } from 'lucide-react';
 import SectionHeading from '@/components/SectionHeading';
 import CTASection from '@/components/CTASection';
 import { works, type WorkCategory } from '@/data/works';
 
 const CATEGORIES: { id: WorkCategory | 'all'; label: string; icon: React.ReactNode }[] = [
-  { id: 'all', label: 'All', icon: <Layers size={16} /> },
+  { id: 'all',   label: 'All',   icon: <Layers size={16} /> },
   { id: 'games', label: 'Games', icon: <Gamepad2 size={16} /> },
-  { id: '3d-art', label: '3D Art', icon: <Box size={16} /> },
-  { id: '2d-art', label: '2D Art', icon: <Palette size={16} /> },
+  { id: 'art',   label: 'Art',   icon: <Palette size={16} /> },
   { id: 'other', label: 'Other', icon: <Layers size={16} /> },
 ];
+
+const CATEGORY_ICON: Record<WorkCategory, React.ReactNode> = {
+  games: <Gamepad2 size={40} />,
+  art:   <Palette size={40} />,
+  other: <Layers size={40} />,
+};
+
+const CATEGORY_LABEL: Record<WorkCategory, string> = {
+  games: 'Game',
+  art:   'Art',
+  other: 'Other',
+};
 
 export default function Works() {
   const [active, setActive] = useState<WorkCategory | 'all'>('all');
@@ -27,7 +38,7 @@ export default function Works() {
         <div className="container">
           <h1 className="page-header__title">Our Works</h1>
           <p className="page-header__description">
-            Games we've built, worlds we've shaped, and art we've created — a
+            Games we&apos;ve built, worlds we&apos;ve shaped, and art we&apos;ve created — a
             showcase of what BADKAVS is all about.
           </p>
         </div>
@@ -57,23 +68,17 @@ export default function Works() {
             <div className="works-grid">
               {filtered.map((work) => (
                 <article key={work.id} className="work-card">
-                  {/* Image / Placeholder */}
+                  {/* Thumbnail */}
                   <div className="work-card__thumbnail">
                     {work.image ? (
                       <img src={work.image} alt={work.title} className="work-card__img" />
                     ) : (
                       <div className="work-card__img-placeholder" aria-hidden="true">
-                        {work.category === 'games' && <Gamepad2 size={40} />}
-                        {work.category === '3d-art' && <Box size={40} />}
-                        {work.category === '2d-art' && <Palette size={40} />}
-                        {work.category === 'other' && <Layers size={40} />}
+                        {CATEGORY_ICON[work.category]}
                       </div>
                     )}
                     <span className="work-card__category-badge">
-                      {work.category === 'games' && 'Game'}
-                      {work.category === '3d-art' && '3D Art'}
-                      {work.category === '2d-art' && '2D Art'}
-                      {work.category === 'other' && 'Other'}
+                      {CATEGORY_LABEL[work.category]}
                     </span>
                   </div>
 
