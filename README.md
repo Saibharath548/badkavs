@@ -1,6 +1,6 @@
-# BADKAVS — Game Development & Creative Services
+# BadCaws — Game Development & Creative Services
 
-**BADKAVS** is a multidisciplinary game development and creative services group offering programming, 2D/3D art, animation, game design, technical art, shaders, UI/UX, video editing, and creative production.
+**BadCaws** is a multidisciplinary game development and creative services group offering programming, 2D/3D art, animation, game design, technical art, shaders, UI/UX, video editing, and creative production.
 
 This repository contains the complete, production-ready frontend website built with React, TypeScript, and Vite. It is designed specifically for **GitHub Pages** as a fast, accessible, and maintenance-free static website with zero backend, database, or API dependencies.
 
@@ -8,7 +8,7 @@ This repository contains the complete, production-ready frontend website built w
 
 ## Architecture: Data-Driven Design
 
-The core architectural principle of BADKAVS is:
+The core architectural principle of BadCaws is:
 
 > **CONTENT / CONFIGURATION  →  REUSABLE COMPONENTS  →  PAGES**
 
@@ -27,7 +27,7 @@ You never need to edit JSX or component code to change a service's availability,
 - **Service Status System:** Statuses (`available`, `coming-soon`, `unavailable`) automatically control badges, visual styling, banners, and call-to-actions across the entire site.
 - **Dynamic Service Pages:** A single reusable component ([`src/pages/ServiceDetail.tsx`](src/pages/ServiceDetail.tsx)) handles any service slug dynamically without page code duplication.
 - **Category Filtering:** Filter services by category (All, Development, Art, Design, Media) driven directly from the central data file.
-- **About Page with Modular Team Section:** Clean presentation of BADKAVS's focus areas and an extensible team registry.
+- **About Page with Modular Team Section:** Clean presentation of BadCaws's focus areas and an extensible team registry.
 - **Contact Hub:** Interactive contact cards for Email, Instagram, and LinkedIn. **No contact form, backend, or third-party form service required.**
 - **GitHub Pages Routing:** Implemented with `HashRouter` ensuring URLs like `/#/services/game-programming` work on refresh without HTTP 404 errors.
 - **Automated CI/CD:** GitHub Actions workflow ([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)) automatically builds and deploys to GitHub Pages upon pushing to the `main` branch.
@@ -50,12 +50,12 @@ You never need to edit JSX or component code to change a service's availability,
 ## Project Structure
 
 ```text
-badkavs/
+BadCaws/
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml          # GitHub Actions deployment workflow
 ├── public/
-│   ├── favicon.svg             # BADKAVS monogram favicon
+│   ├── favicon.svg             # BadCaws monogram favicon
 │   ├── robots.txt              # Search engine crawler instructions
 │   ├── 404.html                # GitHub Pages fallback redirect
 │   └── images/
@@ -169,7 +169,7 @@ Saving the file will instantly update the service cards, filters, and detail pag
 
 ## How to Add a New Service
 
-To add a new service to BADKAVS:
+To add a new service to BadCaws:
 
 1. Open [`src/data/services.ts`](src/data/services.ts).
 2. Add a new object to the `services` array matching the `Service` interface:
@@ -180,7 +180,7 @@ To add a new service to BADKAVS:
   name: "Visual Effects (VFX)",
   slug: "vfx-design",
   shortDescription: "Particle systems, stylized effects, and visual magic for games.",
-  description: "BADKAVS crafts immersive visual effects...",
+  description: "BadCaws crafts immersive visual effects...",
   status: "available", // "available" | "coming-soon" | "unavailable"
   category: "art",      // "development" | "art" | "design" | "media"
   featured: false,      // Set to true to include on the Home page preview
@@ -216,17 +216,17 @@ Open [`src/config/site.ts`](src/config/site.ts) and replace the placeholders:
 
 ```ts
 export const siteConfig = {
-  name: 'BADKAVS',
+  name: 'BadCaws',
 
   tagline: 'Building Games. Creating Worlds.',
 
   description:
-    'BADKAVS provides game development, art, design, technical art, and creative services.',
+    'BadCaws provides game development, art, design, technical art, and creative services.',
 
   contact: {
-    email: 'contact@badkavs.com', // Your actual email
-    instagram: 'https://instagram.com/badkavs', // Your actual Instagram link
-    linkedin: 'https://linkedin.com/company/badkavs', // Your actual LinkedIn link
+    email: 'contact@BadCaws.com', // Your actual email
+    instagram: 'https://instagram.com/BadCaws', // Your actual Instagram link
+    linkedin: 'https://linkedin.com/company/BadCaws', // Your actual LinkedIn link
   },
   // ...
 };
@@ -262,7 +262,7 @@ If `team` is left empty `[]`, the About page automatically displays the placehol
 
 ### Step 1: Create a GitHub Repository
 1. Go to [GitHub](https://github.com/new).
-2. Create a new repository named `badkavs` (or any name you choose).
+2. Create a new repository named `BadCaws` (or any name you choose).
 3. Keep it **Public** (required for free GitHub Pages).
 
 ### Step 2: Initialize Git and Push Your Project
@@ -270,7 +270,7 @@ In your local project directory:
 ```bash
 git init
 git add .
-git commit -m "Initial commit: BADKAVS production website"
+git commit -m "Initial commit: BadCaws production website"
 git branch -M main
 git remote add origin https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git
 git push -u origin main
@@ -312,4 +312,4 @@ Before announcing the website publicly, ensure the following placeholders have b
 
 ## License
 
-All rights reserved &copy; BADKAVS.
+All rights reserved &copy; BadCaws.

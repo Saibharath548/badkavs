@@ -1,13 +1,13 @@
 export const siteConfig = {
-  name: 'BADKAVS',
+  name: 'BadCaws',
 
   tagline: 'Building Games. Creating Worlds.',
 
   description:
-    'BADKAVS provides game development, art, design, technical art, and creative services.',
+    'BadCaws provides game development, art, design, technical art, and creative services.',
 
   contact: {
-    email: 'YOUR_EMAIL_HERE',
+    email: 'workwithbadcaws@gmail.com',
     instagram: 'YOUR_INSTAGRAM_URL_HERE',
     linkedin: 'YOUR_LINKEDIN_URL_HERE',
   },

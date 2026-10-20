@@ -7,44 +7,124 @@ export interface Work {
   category: WorkCategory;
   tags?: string[];
   image?: string;
-  /** Link to itch.io, ArtStation, YouTube, etc. */
+  /** Link to itch.io, ArtStation, YouTube, Unity Asset Store, etc. */
   link?: string;
   linkLabel?: string;
 }
 
 /**
- * Works showcase data.
- * Add entries here to have them appear on the Our Works page automatically.
- * Set `image` to a URL or an imported asset path.
+ * Works showcase data for BadCaws.
+ * Categorized into Games, Art, and Other.
  */
 export const works: Work[] = [
   // ── Games ──────────────────────────────────────────────────────────
   {
-    id: 'game-example',
-    title: 'Project Alpha',
+    id: 'road-to-ninja',
+    title: 'Road To Ninja',
     description:
-      'A fast-paced 3D action platformer built in Unreal Engine 5. Features custom movement mechanics, AI enemies, and a hand-crafted level designed for speedrunning.',
+      'A tactical ninja-themed Ludo board game where strategy meets jutsu powers! Race your pawns across multi-zone board tracks, take refuge in safe villages, and turn the tide with cards like Teleportation, Pawn Swaps, and Rinnegan Nullification.',
     category: 'games',
-    tags: ['Unreal Engine 5', 'C++', 'Blueprints', 'Single Player'],
+    tags: ['Strategy', 'Board Game', 'Unity', 'HTML5', 'Card Abilities'],
+    image: 'https://img.itch.zone/aW1nLzMwNjM2MzY5LnBuZw==/508x254%23mb/oINtoB.png',
+    link: 'https://itiskiruhere.itch.io/road-to-ninja',
+    linkLabel: 'Play on itch.io',
+  },
+  {
+    id: 'ui-unwanted-internship',
+    title: 'UI (Unwanted Internship)',
+    description:
+      'A 3D sci-fi puzzle mystery of logic, mechanics, and drone exploration. Trapped inside an elevator by The Collector, retrieve three lost relics scattered across different timelines to win your freedom.',
+    category: 'games',
+    tags: ['3D Puzzle', 'Sci-Fi', 'Mystery', 'Drone Exploration', 'Physics'],
+    image: 'https://img.itch.zone/aW1nLzI5NjE0Mzk1LnBuZw==/508x254%23mb/6Xpfui.png',
+    link: 'https://itiskiruhere.itch.io/ui',
+    linkLabel: 'Play on itch.io',
+  },
+  {
+    id: 'magnet-maniac',
+    title: 'Magnet Maniac',
+    description:
+      'A 3D puzzle-platformer where magnetism is your way forward. Traverse intricate chambers, manipulate polarities, and solve spatial physics puzzles to restore the broken Core of the world.',
+    category: 'games',
+    tags: ['3D Platformer', 'Physics Puzzle', 'Magnetism', 'Action'],
+    image: 'https://img.itch.zone/aW1nLzI5NjUwNDM2LnBuZw==/508x254%23mb/zGqcng.png',
+    link: 'https://saibharath2006.itch.io/magnet-maniac',
+    linkLabel: 'Play on itch.io',
+  },
+  {
+    id: '2048-bakers-edition',
+    title: "2048: Baker's Edition",
+    description:
+      'A sweet twist on classic 2048 puzzle mechanics. Slide, merge, and bake your way through recipes, manage kitchen power-ups, serve hungry customers in time, and compete on the global online leaderboard.',
+    category: 'games',
+    tags: ['Casual Puzzle', 'Android', 'Online Leaderboard', 'Power-ups'],
+    image: 'https://img.itch.zone/aW1nLzI5NjE2MzgwLnBuZw==/508x254%23mb/9MctLq.png',
+    link: 'https://itiskiruhere.itch.io/2048-bakers-edition',
+    linkLabel: 'Play on itch.io',
+  },
+  {
+    id: 'esc-sim',
+    title: 'Esc Sim',
+    description:
+      'A quirky first-person 3D escape room packed with secrets, hidden clues, and physics interactions. Search every corner and experiment with objects to solve your way out of the study room.',
+    category: 'games',
+    tags: ['3D Escape Room', 'Simulation', 'Puzzle', 'First-Person'],
+    image: 'https://img.itch.zone/aW1nLzIzMjg4NTU1LnBuZw==/508x254%23mb/TUVXF2.png',
+    link: 'https://itiskiruhere.itch.io/esc-sim',
+    linkLabel: 'Play on itch.io',
+  },
+  {
+    id: 'faceit',
+    title: 'FACEit',
+    description:
+      'A psychological turn-based, text-driven experience about confronting emotions hidden behind masks — anger, fear, sadness, denial, and emptiness. Defeat the masks and uncover what lies beneath.',
+    category: 'games',
+    tags: ['Turn-Based', 'Psychological', 'Pixel Art', 'Text-Based', '2D'],
+    image: 'https://img.itch.zone/aW1nLzI1MzE4MzI4LmpwZw==/508x254%23mb/wvR1Yc.jpg',
+    link: 'https://t0cks1ck.itch.io/faceit',
+    linkLabel: 'Play on itch.io',
+  },
+  {
+    id: 'pixel-platformer',
+    title: 'Pixel Platformer',
+    description:
+      'A fast-paced 2D platformer where players parkour through vibrant handcrafted levels, collecting fruits for points and picking up power-ups to enhance agility and overcome challenging obstacles.',
+    category: 'games',
+    tags: ['2D Platformer', 'Pixel Art', 'Parkour', 'Fast-Paced'],
+    link: 'https://t0cks1ck.itch.io/pixel-platformer',
+    linkLabel: 'Play on itch.io',
   },
 
-  // ── Art (3D / 2D) ────────────────────────────────────────────────
+  // ── Art (3D / 2D / Assets) ─────────────────────────────────────────
   {
-    id: 'art-example',
-    title: 'Sci-Fi Environment Concept',
+    id: 'modular-building-kit',
+    title: 'Modular Building Kit',
     description:
-      'A modular sci-fi corridor environment built in Blender and textured in Substance Painter. Designed for use in real-time game engines with optimised LODs.',
+      'A fully modular 3D building pack designed for game-ready usage. Optimized for rapid environment creation and flexible assembly, allowing creators to produce diverse architectural structures and layouts efficiently.',
     category: 'art',
-    tags: ['Blender', 'Substance Painter', '3D Art', 'Environment'],
+    tags: ['3D Environment', 'Modular Assets', 'Blender', 'Game Ready', 'Props'],
+    image: 'https://img.itch.zone/aW1nLzIzMTU0NzE0LnBuZw==/original/esJWsU.png',
+    link: 'https://itiskiruhere.itch.io/modular-building-kit',
+    linkLabel: 'View on itch.io',
+  },
+  {
+    id: 'unity-asset-store-publisher',
+    title: 'Unity Asset Store — 3D Asset Collection',
+    description:
+      'Official publisher profile on the Unity Asset Store featuring production-ready 3D models from stylized to realistic — including character art, environmental props, and PBR textures optimized for real-time engines and VFX.',
+    category: 'art',
+    tags: ['Unity Asset Store', '3D Models', 'PBR Textures', 'Environment Art', 'Game Ready'],
+    link: 'https://assetstore.unity.com/publishers/105358',
+    linkLabel: 'View on Unity Asset Store',
   },
 
   // ── Other ──────────────────────────────────────────────────────────
   {
-    id: 'other-example',
-    title: 'Game Reveal Trailer',
+    id: 'game-trailers-media',
+    title: 'Game Reveal Trailers & Cinematics',
     description:
-      'Official reveal trailer for Project Alpha — edited in DaVinci Resolve with custom sound design, motion graphics, and colour grading.',
+      'High-impact game trailers, gameplay sizzle reels, and promotional video content edited with custom sound design, motion graphics, color grading, and dynamic pacing.',
     category: 'other',
-    tags: ['Video Editing', 'DaVinci Resolve', 'Motion Graphics'],
+    tags: ['Video Production', 'Trailers', 'Motion Graphics', 'Sound Design'],
   },
 ];

@@ -3,6 +3,7 @@ import ServiceGrid from '@/components/ServiceGrid';
 import ServiceCategoryFilter from '@/components/ServiceCategoryFilter';
 import CTASection from '@/components/CTASection';
 import { services } from '@/data/services';
+import { siteConfig } from '@/config/site';
 
 export default function Services() {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -18,7 +19,7 @@ export default function Services() {
         <div className="container">
           <h1 className="page-header__title">Our Services</h1>
           <p className="page-header__description">
-            Browse BADKAVS services across game development, art, design, and
+            Browse {siteConfig.name} services across game development, art, design, and
             creative production. See what&rsquo;s available and what&rsquo;s coming next.
           </p>
         </div>

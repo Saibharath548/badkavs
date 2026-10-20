@@ -11,6 +11,7 @@ import ServiceStatusBadge from '@/components/ServiceStatusBadge';
 import ServiceIcon from '@/components/ServiceIcon';
 import CTASection from '@/components/CTASection';
 import NotFound from './NotFound';
+import { siteConfig } from '@/config/site';
 
 export default function ServiceDetail() {
   const { slug } = useParams<{ slug: string }>();
@@ -64,7 +65,7 @@ export default function ServiceDetail() {
           <div className="coming-soon-banner">
             <h2 className="coming-soon-banner__title">Coming Soon</h2>
             <p className="coming-soon-banner__text">
-              This service is planned but not currently available. BADKAVS is
+              This service is planned but not currently available. {siteConfig.name} is
               working on bringing this capability to our lineup. Stay tuned for
               updates.
             </p>
@@ -88,7 +89,7 @@ export default function ServiceDetail() {
             </h2>
             <p className="coming-soon-banner__text">
               This service is not currently available. Please check back later or
-              contact BADKAVS for more information.
+              contact {siteConfig.name} for more information.
             </p>
           </div>
         )}
@@ -166,7 +167,7 @@ export default function ServiceDetail() {
       ) : (
         <CTASection
           title="Have questions about our services?"
-          description="Reach out to BADKAVS and let's talk about your project."
+          description={`Reach out to ${siteConfig.name} and let's talk about your project.`}
           buttonText="Get in Touch"
           buttonTo="/contact"
         />

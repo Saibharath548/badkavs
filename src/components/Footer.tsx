@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="footer__brand-name">
-              <span className="navbar__logo-badge">BK</span>
+              <img src="/logo.png" alt={`${siteConfig.name} logo`} className="navbar__logo-img" />
               <span>{siteConfig.name}</span>
             </div>
             <p className="footer__brand-tagline">
@@ -34,34 +34,38 @@ export default function Footer() {
             <a
               href={`mailto:${siteConfig.contact.email}`}
               className="footer__link"
-              aria-label="Email BADKAVS"
+              aria-label={`Email ${siteConfig.name}`}
             >
               <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
                 <Mail size={14} /> Email
               </span>
             </a>
-            <a
-              href={siteConfig.contact.instagram}
-              className="footer__link"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="BADKAVS on Instagram"
-            >
-              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-                <Instagram size={14} /> Instagram
-              </span>
-            </a>
-            <a
-              href={siteConfig.contact.linkedin}
-              className="footer__link"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="BADKAVS on LinkedIn"
-            >
-              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-                <Linkedin size={14} /> LinkedIn
-              </span>
-            </a>
+            {siteConfig.contact.instagram && !siteConfig.contact.instagram.includes('YOUR_') && (
+              <a
+                href={siteConfig.contact.instagram}
+                className="footer__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${siteConfig.name} on Instagram`}
+              >
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Instagram size={14} /> Instagram
+                </span>
+              </a>
+            )}
+            {siteConfig.contact.linkedin && !siteConfig.contact.linkedin.includes('YOUR_') && (
+              <a
+                href={siteConfig.contact.linkedin}
+                className="footer__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${siteConfig.name} on LinkedIn`}
+              >
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Linkedin size={14} /> LinkedIn
+                </span>
+              </a>
+            )}
           </div>
         </div>
 

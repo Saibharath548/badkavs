@@ -67,12 +67,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why BADKAVS */}
-      <section className="section" aria-label="Why BADKAVS">
+      {/* Why BadCaws */}
+      <section className="section" aria-label="Why BadCaws">
         <div className="container">
           <SectionHeading
             label="Why Us"
-            title="Why BADKAVS"
+            title="Why BadCaws"
             description="A multidisciplinary team built for game development and creative production."
           />
           <div className="why-grid">
@@ -135,7 +135,7 @@ export default function Home() {
       {/* Final CTA */}
       <CTASection
         title="Have a game or creative idea in mind?"
-        description="Let's build it. Get in touch with BADKAVS and bring your vision to life."
+        description="Let's build it. Get in touch with BadCaws and bring your vision to life."
         buttonText="Get in Touch"
         buttonTo="/contact"
       />

@@ -20,7 +20,7 @@ export default function About() {
             About <span className="gradient-text">{siteConfig.name}</span>
           </h1>
           <p className="about-hero__description">
-            BADKAVS is a multidisciplinary game development and creative services
+            {siteConfig.name} is a multidisciplinary game development and creative services
             group. We bring together programming, art, design, technical art, and
             creative production to help teams and individuals build their
             projects from concept to completion.
@@ -83,7 +83,7 @@ export default function About() {
 
       {/* CTA */}
       <CTASection
-        title="Want to work with BADKAVS?"
+        title={`Want to work with ${siteConfig.name}?`}
         description="We're always interested in hearing about new projects and ideas."
         buttonText="Get in Touch"
         buttonTo="/contact"

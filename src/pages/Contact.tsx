@@ -1,4 +1,4 @@
-import { Mail, Instagram, Linkedin } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import ContactCard from '@/components/ContactCard';
 import { siteConfig } from '@/config/site';
 
@@ -10,7 +10,7 @@ export default function Contact() {
           <h1 className="page-header__title">Let&rsquo;s Work Together</h1>
           <p className="page-header__description">
             Have a game, idea, or creative project in mind? Get in touch with
-            BADKAVS or connect with us online.
+            {siteConfig.name} — we&rsquo;d love to hear from you.
           </p>
         </div>
       </div>
@@ -21,27 +21,9 @@ export default function Contact() {
             <ContactCard
               icon={<Mail size={28} />}
               title="Email"
-              value="Send us a message"
+              value={siteConfig.contact.email}
               href={`mailto:${siteConfig.contact.email}`}
-              ariaLabel="Email BADKAVS"
-            />
-            <ContactCard
-              icon={<Instagram size={28} />}
-              title="Instagram"
-              value="Follow us on Instagram"
-              href={siteConfig.contact.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              ariaLabel="BADKAVS on Instagram"
-            />
-            <ContactCard
-              icon={<Linkedin size={28} />}
-              title="LinkedIn"
-              value="Connect on LinkedIn"
-              href={siteConfig.contact.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              ariaLabel="BADKAVS on LinkedIn"
+              ariaLabel={`Email ${siteConfig.name}`}
             />
           </div>
         </div>

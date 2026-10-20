@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { Gamepad2, Palette, Layers, ExternalLink } from 'lucide-react';
 import SectionHeading from '@/components/SectionHeading';
 import CTASection from '@/components/CTASection';
-import { works, type WorkCategory } from '@/data/works';
+import { works, type Work, type WorkCategory } from '@/data/works';
 
 const CATEGORIES: { id: WorkCategory | 'all'; label: string; icon: React.ReactNode }[] = [
   { id: 'all',   label: 'All',   icon: <Layers size={16} /> },
@@ -23,6 +23,28 @@ const CATEGORY_LABEL: Record<WorkCategory, string> = {
   other: 'Other',
 };
 
+function WorkThumbnail({ work }: { work: Work }) {
+  const [imgFailed, setImgFailed] = useState(false);
+
+  if (work.image && !imgFailed) {
+    return (
+      <img
+        src={work.image}
+        alt={work.title}
+        className="work-card__img"
+        loading="lazy"
+        onError={() => setImgFailed(true)}
+      />
+    );
+  }
+
+  return (
+    <div className="work-card__img-placeholder" aria-hidden="true">
+      {CATEGORY_ICON[work.category]}
+    </div>
+  );
+}
+
 export default function Works() {
   const [active, setActive] = useState<WorkCategory | 'all'>('all');
 
@@ -39,7 +61,7 @@ export default function Works() {
           <h1 className="page-header__title">Our Works</h1>
           <p className="page-header__description">
             Games we&apos;ve built, worlds we&apos;ve shaped, and art we&apos;ve created — a
-            showcase of what BADKAVS is all about.
+            showcase of what BadCaws is all about.
           </p>
         </div>
       </div>
@@ -70,13 +92,7 @@ export default function Works() {
                 <article key={work.id} className="work-card">
                   {/* Thumbnail */}
                   <div className="work-card__thumbnail">
-                    {work.image ? (
-                      <img src={work.image} alt={work.title} className="work-card__img" />
-                    ) : (
-                      <div className="work-card__img-placeholder" aria-hidden="true">
-                        {CATEGORY_ICON[work.category]}
-                      </div>
-                    )}
+                    <WorkThumbnail work={work} />
                     <span className="work-card__category-badge">
                       {CATEGORY_LABEL[work.category]}
                     </span>

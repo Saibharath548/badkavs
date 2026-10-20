@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav className="navbar" role="navigation" aria-label="Main navigation">
       <div className="navbar__inner">
         <Link to="/" className="navbar__logo" aria-label={`${siteConfig.name} — Home`}>
-          <span className="navbar__logo-badge">BK</span>
+          <img src="/logo.png" alt="BadCaws logo" className="navbar__logo-img" />
           <span className="navbar__logo-text">{siteConfig.name}</span>
         </Link>
 

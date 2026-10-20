@@ -23,7 +23,7 @@ export const services: Service[] = [
     shortDescription:
       'Gameplay systems, mechanics, tools, and technical implementation for games.',
     description:
-      'From core gameplay mechanics to complex systems programming, BADKAVS delivers robust and optimized game code. We handle gameplay programming, player controllers, AI systems, editor scripting, tools development, optimization, debugging, and technical implementation — bringing your game design to life with clean, maintainable code.',
+      'From core gameplay mechanics to complex systems programming, BadCaws delivers robust and optimized game code. We handle gameplay programming, player controllers, AI systems, editor scripting, tools development, optimization, debugging, and technical implementation — bringing your game design to life with clean, maintainable code.',
     status: 'available',
     category: 'development',
     featured: true,
@@ -56,7 +56,7 @@ export const services: Service[] = [
     shortDescription:
       'Game-ready 3D models, environments, characters, and assets.',
     description:
-      'BADKAVS creates high-quality 3D art tailored for games. Whether you need detailed characters, immersive environments, hard-surface props, or stylized assets, we produce game-ready models optimized for real-time rendering.',
+      'BadCaws creates high-quality 3D art tailored for games. Whether you need detailed characters, immersive environments, hard-surface props, or stylized assets, we produce game-ready models optimized for real-time rendering.',
     status: 'available',
     category: 'art',
     featured: true,
@@ -88,7 +88,7 @@ export const services: Service[] = [
     shortDescription:
       'Concept art, illustrations, sprites, icons, and visual development.',
     description:
-      'BADKAVS produces compelling 2D art that sets the visual direction for your project. From concept art and character designs to game-ready sprites, icons, and promotional artwork, we bring ideas to life on canvas.',
+      'BadCaws produces compelling 2D art that sets the visual direction for your project. From concept art and character designs to game-ready sprites, icons, and promotional artwork, we bring ideas to life on canvas.',
     status: 'available',
     category: 'art',
     featured: true,
@@ -120,7 +120,7 @@ export const services: Service[] = [
     shortDescription:
       'Sound design, music, and audio production for games and creative projects.',
     description:
-      'BADKAVS is planning to offer audio services for games and creative projects. This service is currently in development and not yet available. Stay tuned for updates on our audio capabilities.',
+      'BadCaws is planning to offer audio services for games and creative projects. This service is currently in development and not yet available. Stay tuned for updates on our audio capabilities.',
     status: 'coming-soon',
     category: 'media',
     featured: false,
@@ -136,7 +136,7 @@ export const services: Service[] = [
     shortDescription:
       'Character animation, 3D animation, rigging, and game animation assets.',
     description:
-      'BADKAVS delivers fluid, expressive animation that brings characters and worlds to life. We handle character animation, 3D animation, rigging support, and animation implementation to ensure your game feels dynamic and responsive.',
+      'BadCaws delivers fluid, expressive animation that brings characters and worlds to life. We handle character animation, 3D animation, rigging support, and animation implementation to ensure your game feels dynamic and responsive.',
     status: 'available',
     category: 'art',
     featured: true,
@@ -164,7 +164,7 @@ export const services: Service[] = [
     shortDescription:
       'From a raw game idea to structured, development-ready game design documentation.',
     description:
-      'BADKAVS transforms raw ideas into structured, development-ready game concepts. We craft comprehensive game design documentation covering core gameplay loops, mechanics, systems design, progression, economy, level design, and complete feature specifications — giving your team a clear roadmap from concept to completion.',
+      'BadCaws transforms raw ideas into structured, development-ready game concepts. We craft comprehensive game design documentation covering core gameplay loops, mechanics, systems design, progression, economy, level design, and complete feature specifications — giving your team a clear roadmap from concept to completion.',
     status: 'available',
     category: 'design',
     featured: true,
@@ -200,7 +200,7 @@ export const services: Service[] = [
     shortDescription:
       'PBR texturing, materials, and surface detailing for game assets.',
     description:
-      'BADKAVS provides professional texturing that makes your 3D assets look their best. From PBR materials and surface detailing to stylized and realistic textures, we create optimized, game-ready textures that bring models to life.',
+      'BadCaws provides professional texturing that makes your 3D assets look their best. From PBR materials and surface detailing to stylized and realistic textures, we create optimized, game-ready textures that bring models to life.',
     status: 'available',
     category: 'art',
     featured: false,
@@ -228,7 +228,7 @@ export const services: Service[] = [
     shortDescription:
       'Image cleanup, retouching, compositing, and promotional image preparation.',
     description:
-      'BADKAVS offers professional photo editing for games and creative projects. We handle image cleanup, retouching, background removal, compositing, color correction, and promotional image preparation.',
+      'BadCaws offers professional photo editing for games and creative projects. We handle image cleanup, retouching, background removal, compositing, color correction, and promotional image preparation.',
     status: 'available',
     category: 'media',
     featured: false,
@@ -256,7 +256,7 @@ export const services: Service[] = [
     shortDescription:
       'Game trailers, gameplay videos, social media clips, and video production.',
     description:
-      'BADKAVS produces engaging video content for games and creative projects. From game trailers and gameplay videos to social media clips and promotional content, we deliver polished video with motion graphics support and post-production.',
+      'BadCaws produces engaging video content for games and creative projects. From game trailers and gameplay videos to social media clips and promotional content, we deliver polished video with motion graphics support and post-production.',
     status: 'available',
     category: 'media',
     featured: false,
@@ -286,7 +286,7 @@ export const services: Service[] = [
     shortDescription:
       'Game UI, menus, HUDs, wireframes, prototypes, and UX flows.',
     description:
-      'BADKAVS designs intuitive, visually compelling game interfaces. We create menus, HUDs, inventory systems, settings screens, navigation flows, wireframes, and prototypes — from Figma designs to Unity UI implementation.',
+      'BadCaws designs intuitive, visually compelling game interfaces. We create menus, HUDs, inventory systems, settings screens, navigation flows, wireframes, and prototypes — from Figma designs to Unity UI implementation.',
     status: 'available',
     category: 'design',
     featured: true,
@@ -320,7 +320,7 @@ export const services: Service[] = [
     shortDescription:
       'Bridging art and engineering — pipelines, rendering, tools, and optimization.',
     description:
-      'BADKAVS bridges the gap between art and engineering. Our technical art services cover asset pipelines, rendering workflows, material systems, performance optimization, artist tools, and shader integration — ensuring your art looks great and runs smoothly.',
+      'BadCaws bridges the gap between art and engineering. Our technical art services cover asset pipelines, rendering workflows, material systems, performance optimization, artist tools, and shader integration — ensuring your art looks great and runs smoothly.',
     status: 'available',
     category: 'development',
     featured: false,
@@ -352,7 +352,7 @@ export const services: Service[] = [
     shortDescription:
       'Custom shaders, visual effects, materials, and rendering solutions.',
     description:
-      'BADKAVS creates custom shaders and visual effects that define your game\'s look. From HLSL code and Shader Graph setups to stylized rendering, surface effects, and shader optimization, we deliver visual solutions that perform.',
+      'BadCaws creates custom shaders and visual effects that define your game\'s look. From HLSL code and Shader Graph setups to stylized rendering, surface effects, and shader optimization, we deliver visual solutions that perform.',
     status: 'available',
     category: 'development',
     featured: false,
