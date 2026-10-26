@@ -11,11 +11,6 @@ export default function Hero() {
       </div>
 
       <div className="hero__content">
-        <div className="hero__badge">
-          <span className="hero__badge-dot" aria-hidden="true" />
-          <span>{siteConfig.name.toUpperCase()} STUDIO &bull; GAME DEV &amp; CREATIVE SERVICES</span>
-        </div>
-
         <h1 className="hero__title">
           <span className="gradient-text">{siteConfig.tagline}</span>
         </h1>
