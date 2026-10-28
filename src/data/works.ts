@@ -8,7 +8,7 @@ import pixelAdventureVideo from '@/assets/projects/pixel-adventure.webm';
 import modularBuildingKitImg from '@/assets/projects/modular-building-kit.png';
 import advanceOutlineShaderImg from '@/assets/projects/advance-outline-shader.png';
 
-export type WorkCategory = 'projects' | 'art-props' | 'ui';
+export type WorkCategory = 'projects' | 'art-props' | 'environments' | 'ui';
 
 export interface Work {
   id: string;
@@ -142,7 +142,33 @@ export const works: Work[] = [
     tags: ['3D Modeling', 'Hard Surface', 'Substance Painter', 'PBR', 'Props'],
   },
 
-  // ── 3. UI ─────────────────────────────────────────────────────────
+  // ── 3. Environments ──────────────────────────────────────────────
+  {
+    id: 'modular-scifi-corridor-env',
+    title: 'Modular Sci-Fi Research Facility',
+    description:
+      'High-fidelity modular interior environment engineered with custom trim sheets, PBR materials, and atmospheric lighting optimized for 60fps real-time exploration.',
+    category: 'environments',
+    tags: ['3D Environment', 'Modular Interior', 'Trim Sheets', 'PBR', 'Lighting'],
+  },
+  {
+    id: 'stylized-dungeon-ruins-env',
+    title: 'Stylized Fantasy Crypt & Ruins',
+    description:
+      'Atmospheric stylized modular dungeon environment featuring tileable stone architecture, vertex-painted moss, and particle lighting assets.',
+    category: 'environments',
+    tags: ['Stylized Art', 'Level Design', 'Modular Architecture', 'Unity', 'Lighting'],
+  },
+  {
+    id: 'cyberpunk-alleyway-env',
+    title: 'Cyberpunk Neon Street Environment',
+    description:
+      'Dystopian urban streetscape with dynamic emissive signage, rainy street vertex shaders, and game-ready modular architectural facades.',
+    category: 'environments',
+    tags: ['Cyberpunk', 'Urban Environment', 'Modular Facades', 'Real-Time', 'VFX'],
+  },
+
+  // ── 4. UI ─────────────────────────────────────────────────────────
   {
     id: 'game-hud-dashboard',
     title: 'Tactical Game HUD & In-Game Overlay',
@@ -171,4 +197,5 @@ export const works: Work[] = [
 
 export const projectWorks = works.filter((w) => w.category === 'projects');
 export const artPropsWorks = works.filter((w) => w.category === 'art-props');
+export const environmentsWorks = works.filter((w) => w.category === 'environments');
 export const uiWorks = works.filter((w) => w.category === 'ui');

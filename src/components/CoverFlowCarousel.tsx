@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
-import { ChevronLeft, ChevronRight, ExternalLink, Gamepad2, Palette, Layout } from 'lucide-react';
+import { useState, useRef, useCallback } from 'react';
+import { ChevronLeft, ChevronRight, ExternalLink, Gamepad2, Palette, Mountain, Layout } from 'lucide-react';
 import type { Work } from '@/data/works';
 
 interface CoverFlowCarouselProps {
@@ -9,7 +9,6 @@ interface CoverFlowCarouselProps {
 
 export default function CoverFlowCarousel({ items, sectionId }: CoverFlowCarouselProps) {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
   const touchStartX = useRef<number | null>(null);
 
   const total = items.length;
@@ -39,13 +38,17 @@ export default function CoverFlowCarousel({ items, sectionId }: CoverFlowCarouse
 
   // Touch swipe support
   const handleTouchStart = (e: React.TouchEvent) => {
-    touchStartX.current = e.touches[0].clientX;
+    const touch = e.touches[0];
+    if (touch) {
+      touchStartX.current = touch.clientX;
+    }
   };
 
   const handleTouchEnd = (e: React.TouchEvent) => {
     if (touchStartX.current === null) return;
-    const touchEndX = e.changedTouches[0].clientX;
-    const diff = touchStartX.current - touchEndX;
+    const touch = e.changedTouches[0];
+    if (!touch) return;
+    const diff = touchStartX.current - touch.clientX;
     if (Math.abs(diff) > 40) {
       if (diff > 0) goToNext();
       else goToPrev();
@@ -63,8 +66,6 @@ export default function CoverFlowCarousel({ items, sectionId }: CoverFlowCarouse
       id={sectionId}
       tabIndex={0}
       onKeyDown={handleKeyDown}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
       aria-roledescription="carousel"
@@ -143,6 +144,8 @@ export default function CoverFlowCarousel({ items, sectionId }: CoverFlowCarouse
                         <Gamepad2 size={48} />
                       ) : item.category === 'art-props' ? (
                         <Palette size={48} />
+                      ) : item.category === 'environments' ? (
+                        <Mountain size={48} />
                       ) : (
                         <Layout size={48} />
                       )}
@@ -158,7 +161,9 @@ export default function CoverFlowCarousel({ items, sectionId }: CoverFlowCarouse
                       ? 'Project'
                       : item.category === 'art-props'
                         ? 'Art & Props'
-                        : 'UI'}
+                        : item.category === 'environments'
+                          ? 'Environment'
+                          : 'UI'}
                   </div>
                 </div>
               </div>
